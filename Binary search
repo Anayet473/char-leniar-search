@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int arr[]={1,2,3,4,5};
+int i=0,left=0,right=4,middle,sz=4;
+while(left<=right){
+    middle=(left+right)/2;
+    if(arr[middle]==sz){
+        cout<<middle;
+        return 0;
+    }
+    else if(arr[middle]<sz){
+        left=middle+1;
+    }
+    else{
+        right=middle-1;
+    }
+}
+
+
+
+cout<<"not valid";
+
+
+
+    return 0;
+
+}
